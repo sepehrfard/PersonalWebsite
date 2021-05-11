@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio </title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+
+
+<body>
+
+
+    <main>
+        <ul class="nav-list">
+            <li class="item"><a href="#experience-divider">Experiences</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#about-me">About Me</a></li>
+
+        </ul>
+
+        <section id="landingPage">
+            <h1>Hey there, I am Sepehr </h1>
+            <p>Software Engineer and tech enthusiast</p>
+        </section>
+
+
+
+        <hr id="experience-divider" class="divider">
+
+        <section id="experiences">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="text-item">
+                    <picture class="logo">
+                        <img src="images/cap1.png" alt="capitalOneLogo">
+                    </picture>
+                    <article class="text-box">
+                        <div class="head-desc desc">
+                            <h3 class="heading">Capital One</h3>
+                            <p class="desc">Designed predictive models with Keras by utilizing GRU and attention architectures. Given graph embeddings of account transactions model, predicted new monthly embeddings to be used for spending patterns and anomaly detection.</p>
+                        </div>
+
+                        <div class="head-desc skill-sec">
+                            <h3 class="heading">Skills</h3>
+                            <ul class="skills">
+                                <li>python</li>
+                                <li>js</li>
+                                <li>flask</li>
+                            </ul>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="text-item">
+                    <picture class="logo">
+                        <img src="images/retechLabs.png" alt="retechLabs">
+                    </picture>
+                    <article class="text-box">
+                        <div class="head-desc desc">
+                            <h3 class="heading">Retech Labs</h3>
+                            <p class="desc">Created a visual-based barcode generator that increased our image recognition model's baseline precision by 73% to identify grocery products that lacked differentiable visual features with previous precision of 20%.</p>
+                        </div>
+
+                        <div class="head-desc skill-sec">
+                            <h3 class="heading">Skills</h3>
+                            <ul class="skills">
+                                <li>python</li>
+                                <li>tensorflow</li>
+                                <li>flask</li>
+                            </ul>
+                        </div>
+
+                    </article>
+                </div>
+        </section>
+
+
+        <hr class="divider">
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="text-item">
+                    <picture class="logo">
+                        <img src="images/emoji.png" alt="handemoji">
+                    </picture>
+                    <article class="text-box">
+                        <div class="head-desc desc">
+                            <h3 class="heading">Ai Rock, Paper, Scissors</h3>
+                            <p class="desc">Built a webcam game to play Rock Paper Scissors with the computer hands-free. Trained model using FastAi framework to classify hand gestures with 97% Recall and 95% accuracy. Created a website with flask backend implementation
+                                with gesture classifier deployed and running with AWS Lambda functions</p>
+                        </div>
+
+                        <div class="head-desc skill-sec">
+                            <h3 class="heading">Skills</h3>
+                            <ul class="skills">
+                                <li>python</li>
+                                <li>js</li>
+                                <li>flask</li>
+                                <li>FastAi</li>
+                            </ul>
+                        </div>
+
+                    </article>
+                </div>
+
+                <div class="text-item">
+                    <picture class="logo">
+                        <img src="images/robot.png" alt="airobot">
+                    </picture>
+                    <article class="text-box">
+                        <div class="head-desc desc">
+                            <h3 class="heading">Machine Question Answering</h3>
+                            <p class="desc">Implemented Bidirectional Attention Flow language model trained on SQuAD 2.0, a question and answering dataset using Pytorch. Increased model performance by 4% over the original BiDAF paper by adding self- attention layer to
+                                gain more temporal information about the context learned by the model, switched from RNN to GRU architecture, which increased efficiency and decreased training time by 22%.</p>
+                        </div>
+
+                        <div class="head-desc skill-sec">
+                            <h3 class="heading">Skills</h3>
+                            <ul class="skills">
+                                <li>python</li>
+                                <li>Pytorch</li>
+                                <li>numpy</li>
+                            </ul>
+                        </div>
+
+                    </article>
+                </div>
+        </section>
+
+
+
+        <hr class="divider">
+        <div class="container">
+            <div id="about-me" class="text-item">
+                <picture class="logo">
+                    <img src="images/self.png" alt="myself">
+                </picture>
+
+                <article class="text-box">
+                    <div class="head-desc" id="intro">
+                        <h3 class="heading">Sepehr Ardebilianfard</h3>
+                        <p id="pitch" class="desc">Energetic and dependable Computer Science & Engineering student highly interested in Artificial Intelligence, Machine Learning, Software Engineering & Robotics. </span>
+                        </p>
+                        <div class="head-desc" id="hobby">
+                            <h3 class="heading">Hobbies</h3>
+                            <ul id="hobbies">
+                                <li>SnowBoarding</li>
+                                <li>Investing</li>
+                                <li>Programming</li>
+                                <li>Reading</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="connectDiv">
+                        <ul id="connect">
+                            <li>
+                                <a class="conectBtn" id="twitter" content-type="image/svg+xml" href="https://twitter.com/"></a>
+                            </li>
+                            <li>
+                                <a class="conectBtn" id="linkedin" href="https://www.linkedin.com/"></a>
+                            </li>
+                            <li>
+                                <a class="conectBtn" id="github" href="https://www.github.com/"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>©Copyright 2021 by Sepehr Ardebilianfard. All rights reversed.</p>
+    </footer>
+
+
+</body>
+
+</html>
