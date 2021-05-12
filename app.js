@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var mongoose = require('mongoose')
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -18,6 +19,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+var mongoDB = 'mongodb+srv://sepehr:sepehr1376@cluster0.aookn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority;'
+mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
+
+//Get the default connection
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("Mongo Connected");
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
